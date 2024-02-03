@@ -10,7 +10,7 @@ def test_user_exists(github_api):
 
 @pytest.mark.api
 def test_user_not_exists(github_api):
-    r = github_api.get_user('serhiiharkusha')
+    r = github_api.get_user('serhiiharkusha321')
     assert r['message'] =='Not Found'
 
 @pytest.mark.api
